@@ -25,8 +25,8 @@
 static gboolean
 gst_core_audio_open_impl (GstCoreAudio * core_audio)
 {
-  return gst_core_audio_open_device (core_audio, kAudioUnitSubType_RemoteIO,
-      "RemoteIO");
+  return gst_core_audio_open_device (core_audio, kAudioUnitSubType_VoiceProcessingIO,
+      "Voice");
 }
 
 static gboolean
